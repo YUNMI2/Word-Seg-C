@@ -1,0 +1,27 @@
+维 [T1]维#START# b-seg
+阿 [T1]阿维 m-seg
+里 [T1]里阿 e-seg
+看 [T1]看里 b-seg
+好 [T1]好看 e-seg
+欧 [T1]欧好 b-seg
+文 [T1]文欧 e-seg
+
+新 [T1]新#START# b-seg
+华 [T1]华新 m-seg
+社 [T1]社华 e-seg
+伦 [T1]伦社 b-seg
+敦 [T1]敦伦 e-seg
+1 [T1]1敦 b-seg
+2 [T1]21 m-seg
+月 [T1]月2 e-seg
+3 [T1]3月 b-seg
+0 [T1]03 m-seg
+日 [T1]日0 e-seg
+电 [T1]电日 s-seg
+( [T1](电 s-seg
+记 [T1]记( b-seg
+者 [T1]者记 e-seg
+周 [T1]周者 b-seg
+杰 [T1]杰周 e-seg
+) [T1])杰 s-seg
+

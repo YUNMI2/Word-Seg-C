@@ -1,0 +1,36 @@
+上 [T1]上#START# a-seg
+海 [T1]海上 a-seg
+浦 [T1]浦海 a-seg
+东 [T1]东浦 a-seg
+开 [T1]开东 a-seg
+发 [T1]发开 a-seg
+与 [T1]与发 s-seg
+法 [T1]法与 b-seg
+制 [T1]制法 e-seg
+建 [T1]建制 b-seg
+设 [T1]设建 e-seg
+同 [T1]同设 b-seg
+步 [T1]步同 e-seg
+
+新 [T1]新#START# a-seg
+华 [T1]华新 a-seg
+社 [T1]社华 a-seg
+上 [T1]上社 a-seg
+海 [T1]海上 a-seg
+二 [T1]二海 a-seg
+月 [T1]月二 a-seg
+十 [T1]十月 b-seg
+日 [T1]日十 e-seg
+电 [T1]电日 s-seg
+( [T1](电 s-seg
+记 [T1]记( b-seg
+者 [T1]者记 e-seg
+谢 [T1]谢者 b-seg
+金 [T1]金谢 m-seg
+虎 [T1]虎金 e-seg
+、 [T1]、虎 s-seg
+张 [T1]张、 b-seg
+持 [T1]持张 m-seg
+坚 [T1]坚持 e-seg
+) [T1])坚 s-seg
+
