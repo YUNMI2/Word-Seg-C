@@ -18,3 +18,10 @@
 - vi run.sh  (修改代码路径，以及语料)
 - ./run.sh
 
+
+#### fully && partial
+- 全标注语料格式：    char bichar tagfully
+- 局部标注语料格式：  char bichar tagpartial
+- tag:
+	- tagfully:	B-SEG	M-SEG	E-SEG	S-SEG	
+	- tagpartial:	B-SEG	M-SEG	E-SEG	S-SEG	A-SEG(四种可能)	B-SEG/S-SEG(可能输b或者s标签)	etc
