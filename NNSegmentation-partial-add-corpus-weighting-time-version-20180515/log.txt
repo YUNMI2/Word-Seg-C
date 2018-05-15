@@ -1,0 +1,4 @@
+Scanning dependencies of target LSTMCRFMLLabeler
+[ 50%] Building CXX object CMakeFiles/LSTMCRFMLLabeler.dir/LSTMCRFMLLabeler.cpp.o
+[100%] Linking CXX executable LSTMCRFMLLabeler
+[100%] Built target LSTMCRFMLLabeler
