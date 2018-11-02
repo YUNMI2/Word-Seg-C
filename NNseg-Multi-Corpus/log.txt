@@ -1,0 +1,597 @@
+Scanning dependencies of target LSTMCRFMLLabeler
+[ 50%] Building CXX object CMakeFiles/LSTMCRFMLLabeler.dir/LSTMCRFMLLabeler.cpp.o
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp: In member function ‘void Labeler::train(const string&, const string&, const string&, const string&, const string&, const string&, const string&, const string&)’:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:511:51: error: no match for ‘operator+’ (operand types are ‘std::__cxx11::basic_string<char>’ and ‘std::stringstream {aka std::__cxx11::basic_stringstream<char>}’)
+            writeModelFile(modelFile + "news_dev=" + s_updateIter);
+                                                   ^
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:17:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expression.h:355:1: note: candidate: template<class TA, class TB, class DType, int ta, int tb> mshadow::expr::BinaryMapExp<mshadow::op::plus, TA, TB, DType, ((ta | tb) | mshadow::expr::type::kMapper)> mshadow::expr::operator+(const mshadow::expr::Exp<TA, DType, ta>&, const mshadow::expr::Exp<TB, DType, tb>&)
+ operator+(const Exp<TA, DType, ta> &lhs, const Exp<TB, DType, tb> &rhs) {
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expression.h:355:1: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:511:53: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const mshadow::expr::Exp<TA, DType, ta>’
+            writeModelFile(modelFile + "news_dev=" + s_updateIter);
+                                                     ^
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1067:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:75:1: note: candidate: template<class TA, int ta> mshadow::expr::BinaryMapExp<mshadow::op::plus, TA, mshadow::expr::ScalarExp<float>, float, (ta | mshadow::expr::type::kMapper)> mshadow::expr::operator+(const mshadow::expr::Exp<TA, float, ta>&, const mshadow::expr::ScalarExp<float>&)
+ operator+(const Exp<TA, MSHADOW_SCALAR_, ta> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:75:1: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:511:53: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const mshadow::expr::Exp<TA, float, ta>’
+            writeModelFile(modelFile + "news_dev=" + s_updateIter);
+                                                     ^
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1067:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:108:1: note: candidate: template<class TB, int tb> mshadow::expr::BinaryMapExp<mshadow::op::plus, mshadow::expr::ScalarExp<float>, TB, float, (tb | mshadow::expr::type::kMapper)> mshadow::expr::operator+(const mshadow::expr::ScalarExp<float>&, const mshadow::expr::Exp<TA, float, ta>&)
+ operator+(const ScalarExp<MSHADOW_SCALAR_> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:108:1: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:511:37: note:   cannot convert ‘std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>](((const char*)"news_dev="))’ (type ‘std::__cxx11::basic_string<char>’) to type ‘const mshadow::expr::ScalarExp<float>&’
+            writeModelFile(modelFile + "news_dev=" + s_updateIter);
+                                     ^
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1067:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:139:1: note: candidate: mshadow::expr::BinaryMapExp<mshadow::op::plus, mshadow::expr::ScalarExp<float>, mshadow::expr::ScalarExp<float>, float, 1> mshadow::expr::operator+(const mshadow::expr::ScalarExp<float>&, const mshadow::expr::ScalarExp<float>&)
+ operator+(const ScalarExp<MSHADOW_SCALAR_> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:139:1: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘const mshadow::expr::ScalarExp<float>&’
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1070:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:75:1: note: candidate: template<class TA, int ta> mshadow::expr::BinaryMapExp<mshadow::op::plus, TA, mshadow::expr::ScalarExp<double>, double, (ta | mshadow::expr::type::kMapper)> mshadow::expr::operator+(const mshadow::expr::Exp<TA, double, ta>&, const mshadow::expr::ScalarExp<double>&)
+ operator+(const Exp<TA, MSHADOW_SCALAR_, ta> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:75:1: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:511:53: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const mshadow::expr::Exp<TA, double, ta>’
+            writeModelFile(modelFile + "news_dev=" + s_updateIter);
+                                                     ^
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1070:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:108:1: note: candidate: template<class TB, int tb> mshadow::expr::BinaryMapExp<mshadow::op::plus, mshadow::expr::ScalarExp<double>, TB, double, (tb | mshadow::expr::type::kMapper)> mshadow::expr::operator+(const mshadow::expr::ScalarExp<double>&, const mshadow::expr::Exp<TA, double, ta>&)
+ operator+(const ScalarExp<MSHADOW_SCALAR_> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:108:1: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:511:37: note:   cannot convert ‘std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>](((const char*)"news_dev="))’ (type ‘std::__cxx11::basic_string<char>’) to type ‘const mshadow::expr::ScalarExp<double>&’
+            writeModelFile(modelFile + "news_dev=" + s_updateIter);
+                                     ^
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1070:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:139:1: note: candidate: mshadow::expr::BinaryMapExp<mshadow::op::plus, mshadow::expr::ScalarExp<double>, mshadow::expr::ScalarExp<double>, double, 1> mshadow::expr::operator+(const mshadow::expr::ScalarExp<double>&, const mshadow::expr::ScalarExp<double>&)
+ operator+(const ScalarExp<MSHADOW_SCALAR_> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:139:1: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘const mshadow::expr::ScalarExp<double>&’
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1073:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:75:1: note: candidate: template<class TA, int ta> mshadow::expr::BinaryMapExp<mshadow::op::plus, TA, mshadow::expr::ScalarExp<int>, int, (ta | mshadow::expr::type::kMapper)> mshadow::expr::operator+(const mshadow::expr::Exp<TA, int, ta>&, const mshadow::expr::ScalarExp<int>&)
+ operator+(const Exp<TA, MSHADOW_SCALAR_, ta> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:75:1: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:511:53: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const mshadow::expr::Exp<TA, int, ta>’
+            writeModelFile(modelFile + "news_dev=" + s_updateIter);
+                                                     ^
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1073:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:108:1: note: candidate: template<class TB, int tb> mshadow::expr::BinaryMapExp<mshadow::op::plus, mshadow::expr::ScalarExp<int>, TB, int, (tb | mshadow::expr::type::kMapper)> mshadow::expr::operator+(const mshadow::expr::ScalarExp<int>&, const mshadow::expr::Exp<TA, int, ta>&)
+ operator+(const ScalarExp<MSHADOW_SCALAR_> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:108:1: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:511:37: note:   cannot convert ‘std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>](((const char*)"news_dev="))’ (type ‘std::__cxx11::basic_string<char>’) to type ‘const mshadow::expr::ScalarExp<int>&’
+            writeModelFile(modelFile + "news_dev=" + s_updateIter);
+                                     ^
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1073:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:139:1: note: candidate: mshadow::expr::BinaryMapExp<mshadow::op::plus, mshadow::expr::ScalarExp<int>, mshadow::expr::ScalarExp<int>, int, 1> mshadow::expr::operator+(const mshadow::expr::ScalarExp<int>&, const mshadow::expr::ScalarExp<int>&)
+ operator+(const ScalarExp<MSHADOW_SCALAR_> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:139:1: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘const mshadow::expr::ScalarExp<int>&’
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1076:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:75:1: note: candidate: template<class TA, int ta> mshadow::expr::BinaryMapExp<mshadow::op::plus, TA, mshadow::expr::ScalarExp<mshadow::half::half_t>, mshadow::half::half_t, (ta | mshadow::expr::type::kMapper)> mshadow::expr::operator+(const mshadow::expr::Exp<TA, mshadow::half::half_t, ta>&, const mshadow::expr::ScalarExp<mshadow::half::half_t>&)
+ operator+(const Exp<TA, MSHADOW_SCALAR_, ta> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:75:1: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:511:53: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const mshadow::expr::Exp<TA, mshadow::half::half_t, ta>’
+            writeModelFile(modelFile + "news_dev=" + s_updateIter);
+                                                     ^
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1076:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:108:1: note: candidate: template<class TB, int tb> mshadow::expr::BinaryMapExp<mshadow::op::plus, mshadow::expr::ScalarExp<mshadow::half::half_t>, TB, mshadow::half::half_t, (tb | mshadow::expr::type::kMapper)> mshadow::expr::operator+(const mshadow::expr::ScalarExp<mshadow::half::half_t>&, const mshadow::expr::Exp<TA, mshadow::half::half_t, ta>&)
+ operator+(const ScalarExp<MSHADOW_SCALAR_> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:108:1: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:511:37: note:   cannot convert ‘std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>](((const char*)"news_dev="))’ (type ‘std::__cxx11::basic_string<char>’) to type ‘const mshadow::expr::ScalarExp<mshadow::half::half_t>&’
+            writeModelFile(modelFile + "news_dev=" + s_updateIter);
+                                     ^
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1076:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:139:1: note: candidate: mshadow::expr::BinaryMapExp<mshadow::op::plus, mshadow::expr::ScalarExp<mshadow::half::half_t>, mshadow::expr::ScalarExp<mshadow::half::half_t>, mshadow::half::half_t, 1> mshadow::expr::operator+(const mshadow::expr::ScalarExp<mshadow::half::half_t>&, const mshadow::expr::ScalarExp<mshadow::half::half_t>&)
+ operator+(const ScalarExp<MSHADOW_SCALAR_> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:139:1: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘const mshadow::expr::ScalarExp<mshadow::half::half_t>&’
+In file included from /usr/include/c++/5/deque:64:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/MyLib.h:18,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:13,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/usr/include/c++/5/bits/stl_deque.h:372:5: note: candidate: template<class _Tp, class _Ref, class _Ptr> std::_Deque_iterator<_Tp, _Ref, _Ptr> std::operator+(std::ptrdiff_t, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)
+     operator+(ptrdiff_t __n, const _Deque_iterator<_Tp, _Ref, _Ptr>& __x)
+     ^
+/usr/include/c++/5/bits/stl_deque.h:372:5: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:511:37: note:   cannot convert ‘std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>](((const char*)"news_dev="))’ (type ‘std::__cxx11::basic_string<char>’) to type ‘std::ptrdiff_t {aka long int}’
+            writeModelFile(modelFile + "news_dev=" + s_updateIter);
+                                     ^
+In file included from /usr/include/c++/5/vector:65:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/././logging.h:16,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./base.h:264,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:16,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/usr/include/c++/5/bits/stl_bvector.h:387:3: note: candidate: std::_Bit_const_iterator std::operator+(std::ptrdiff_t, const std::_Bit_const_iterator&)
+   operator+(ptrdiff_t __n, const _Bit_const_iterator& __x)
+   ^
+/usr/include/c++/5/bits/stl_bvector.h:387:3: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘std::ptrdiff_t {aka long int}’
+/usr/include/c++/5/bits/stl_bvector.h:297:3: note: candidate: std::_Bit_iterator std::operator+(std::ptrdiff_t, const std::_Bit_iterator&)
+   operator+(ptrdiff_t __n, const _Bit_iterator& __x)
+   ^
+/usr/include/c++/5/bits/stl_bvector.h:297:3: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘std::ptrdiff_t {aka long int}’
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:11,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/usr/include/c++/5/bits/basic_string.h:4836:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+     ^
+/usr/include/c++/5/bits/basic_string.h:4836:5: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:511:53: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘std::__cxx11::basic_stringstream<char>’)
+            writeModelFile(modelFile + "news_dev=" + s_updateIter);
+                                                     ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:11,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/usr/include/c++/5/bits/basic_string.h:4820:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.h:4820:5: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:511:53: note:   mismatched types ‘const _CharT*’ and ‘std::__cxx11::basic_stringstream<char>’
+            writeModelFile(modelFile + "news_dev=" + s_updateIter);
+                                                     ^
+In file included from /usr/include/c++/5/string:53:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:11,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/usr/include/c++/5/bits/basic_string.tcc:1167:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+     ^
+/usr/include/c++/5/bits/basic_string.tcc:1167:5: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:511:53: note:   ‘std::stringstream {aka std::__cxx11::basic_stringstream<char>}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+            writeModelFile(modelFile + "news_dev=" + s_updateIter);
+                                                     ^
+In file included from /usr/include/c++/5/string:53:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:11,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/usr/include/c++/5/bits/basic_string.tcc:1151:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const _CharT* __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.tcc:1151:5: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:511:53: note:   mismatched types ‘const _CharT*’ and ‘std::__cxx11::basic_string<char>’
+            writeModelFile(modelFile + "news_dev=" + s_updateIter);
+                                                     ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:11,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/usr/include/c++/5/bits/basic_string.h:4783:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.h:4783:5: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:511:53: note:   ‘std::stringstream {aka std::__cxx11::basic_stringstream<char>}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+            writeModelFile(modelFile + "news_dev=" + s_updateIter);
+                                                     ^
+In file included from /usr/include/c++/5/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5/bits/char_traits.h:39,
+                 from /usr/include/c++/5/ios:40,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:11,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/usr/include/c++/5/bits/stl_iterator.h:334:5: note: candidate: template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)
+     operator+(typename reverse_iterator<_Iterator>::difference_type __n,
+     ^
+/usr/include/c++/5/bits/stl_iterator.h:334:5: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:511:53: note:   ‘std::stringstream {aka std::__cxx11::basic_stringstream<char>}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+            writeModelFile(modelFile + "news_dev=" + s_updateIter);
+                                                     ^
+In file included from /usr/include/c++/5/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5/bits/char_traits.h:39,
+                 from /usr/include/c++/5/ios:40,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:11,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/usr/include/c++/5/bits/stl_iterator.h:930:5: note: candidate: template<class _Iterator, class _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::operator+(typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator+(typename __normal_iterator<_Iterator, _Container>::difference_type
+     ^
+/usr/include/c++/5/bits/stl_iterator.h:930:5: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:511:53: note:   ‘std::stringstream {aka std::__cxx11::basic_stringstream<char>}’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+            writeModelFile(modelFile + "news_dev=" + s_updateIter);
+                                                     ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:577:54: error: no match for ‘operator+’ (operand types are ‘std::__cxx11::basic_string<char>’ and ‘std::stringstream {aka std::__cxx11::basic_stringstream<char>}’)
+            writeModelFile(modelFile + "nonnews_dev=" + s_updateIter);
+                                                      ^
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:17:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expression.h:355:1: note: candidate: template<class TA, class TB, class DType, int ta, int tb> mshadow::expr::BinaryMapExp<mshadow::op::plus, TA, TB, DType, ((ta | tb) | mshadow::expr::type::kMapper)> mshadow::expr::operator+(const mshadow::expr::Exp<TA, DType, ta>&, const mshadow::expr::Exp<TB, DType, tb>&)
+ operator+(const Exp<TA, DType, ta> &lhs, const Exp<TB, DType, tb> &rhs) {
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expression.h:355:1: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:577:56: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const mshadow::expr::Exp<TA, DType, ta>’
+            writeModelFile(modelFile + "nonnews_dev=" + s_updateIter);
+                                                        ^
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1067:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:75:1: note: candidate: template<class TA, int ta> mshadow::expr::BinaryMapExp<mshadow::op::plus, TA, mshadow::expr::ScalarExp<float>, float, (ta | mshadow::expr::type::kMapper)> mshadow::expr::operator+(const mshadow::expr::Exp<TA, float, ta>&, const mshadow::expr::ScalarExp<float>&)
+ operator+(const Exp<TA, MSHADOW_SCALAR_, ta> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:75:1: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:577:56: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const mshadow::expr::Exp<TA, float, ta>’
+            writeModelFile(modelFile + "nonnews_dev=" + s_updateIter);
+                                                        ^
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1067:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:108:1: note: candidate: template<class TB, int tb> mshadow::expr::BinaryMapExp<mshadow::op::plus, mshadow::expr::ScalarExp<float>, TB, float, (tb | mshadow::expr::type::kMapper)> mshadow::expr::operator+(const mshadow::expr::ScalarExp<float>&, const mshadow::expr::Exp<TA, float, ta>&)
+ operator+(const ScalarExp<MSHADOW_SCALAR_> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:108:1: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:577:37: note:   cannot convert ‘std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>](((const char*)"nonnews_dev="))’ (type ‘std::__cxx11::basic_string<char>’) to type ‘const mshadow::expr::ScalarExp<float>&’
+            writeModelFile(modelFile + "nonnews_dev=" + s_updateIter);
+                                     ^
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1067:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:139:1: note: candidate: mshadow::expr::BinaryMapExp<mshadow::op::plus, mshadow::expr::ScalarExp<float>, mshadow::expr::ScalarExp<float>, float, 1> mshadow::expr::operator+(const mshadow::expr::ScalarExp<float>&, const mshadow::expr::ScalarExp<float>&)
+ operator+(const ScalarExp<MSHADOW_SCALAR_> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:139:1: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘const mshadow::expr::ScalarExp<float>&’
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1070:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:75:1: note: candidate: template<class TA, int ta> mshadow::expr::BinaryMapExp<mshadow::op::plus, TA, mshadow::expr::ScalarExp<double>, double, (ta | mshadow::expr::type::kMapper)> mshadow::expr::operator+(const mshadow::expr::Exp<TA, double, ta>&, const mshadow::expr::ScalarExp<double>&)
+ operator+(const Exp<TA, MSHADOW_SCALAR_, ta> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:75:1: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:577:56: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const mshadow::expr::Exp<TA, double, ta>’
+            writeModelFile(modelFile + "nonnews_dev=" + s_updateIter);
+                                                        ^
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1070:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:108:1: note: candidate: template<class TB, int tb> mshadow::expr::BinaryMapExp<mshadow::op::plus, mshadow::expr::ScalarExp<double>, TB, double, (tb | mshadow::expr::type::kMapper)> mshadow::expr::operator+(const mshadow::expr::ScalarExp<double>&, const mshadow::expr::Exp<TA, double, ta>&)
+ operator+(const ScalarExp<MSHADOW_SCALAR_> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:108:1: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:577:37: note:   cannot convert ‘std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>](((const char*)"nonnews_dev="))’ (type ‘std::__cxx11::basic_string<char>’) to type ‘const mshadow::expr::ScalarExp<double>&’
+            writeModelFile(modelFile + "nonnews_dev=" + s_updateIter);
+                                     ^
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1070:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:139:1: note: candidate: mshadow::expr::BinaryMapExp<mshadow::op::plus, mshadow::expr::ScalarExp<double>, mshadow::expr::ScalarExp<double>, double, 1> mshadow::expr::operator+(const mshadow::expr::ScalarExp<double>&, const mshadow::expr::ScalarExp<double>&)
+ operator+(const ScalarExp<MSHADOW_SCALAR_> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:139:1: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘const mshadow::expr::ScalarExp<double>&’
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1073:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:75:1: note: candidate: template<class TA, int ta> mshadow::expr::BinaryMapExp<mshadow::op::plus, TA, mshadow::expr::ScalarExp<int>, int, (ta | mshadow::expr::type::kMapper)> mshadow::expr::operator+(const mshadow::expr::Exp<TA, int, ta>&, const mshadow::expr::ScalarExp<int>&)
+ operator+(const Exp<TA, MSHADOW_SCALAR_, ta> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:75:1: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:577:56: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const mshadow::expr::Exp<TA, int, ta>’
+            writeModelFile(modelFile + "nonnews_dev=" + s_updateIter);
+                                                        ^
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1073:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:108:1: note: candidate: template<class TB, int tb> mshadow::expr::BinaryMapExp<mshadow::op::plus, mshadow::expr::ScalarExp<int>, TB, int, (tb | mshadow::expr::type::kMapper)> mshadow::expr::operator+(const mshadow::expr::ScalarExp<int>&, const mshadow::expr::Exp<TA, int, ta>&)
+ operator+(const ScalarExp<MSHADOW_SCALAR_> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:108:1: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:577:37: note:   cannot convert ‘std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>](((const char*)"nonnews_dev="))’ (type ‘std::__cxx11::basic_string<char>’) to type ‘const mshadow::expr::ScalarExp<int>&’
+            writeModelFile(modelFile + "nonnews_dev=" + s_updateIter);
+                                     ^
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1073:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:139:1: note: candidate: mshadow::expr::BinaryMapExp<mshadow::op::plus, mshadow::expr::ScalarExp<int>, mshadow::expr::ScalarExp<int>, int, 1> mshadow::expr::operator+(const mshadow::expr::ScalarExp<int>&, const mshadow::expr::ScalarExp<int>&)
+ operator+(const ScalarExp<MSHADOW_SCALAR_> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:139:1: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘const mshadow::expr::ScalarExp<int>&’
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1076:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:75:1: note: candidate: template<class TA, int ta> mshadow::expr::BinaryMapExp<mshadow::op::plus, TA, mshadow::expr::ScalarExp<mshadow::half::half_t>, mshadow::half::half_t, (ta | mshadow::expr::type::kMapper)> mshadow::expr::operator+(const mshadow::expr::Exp<TA, mshadow::half::half_t, ta>&, const mshadow::expr::ScalarExp<mshadow::half::half_t>&)
+ operator+(const Exp<TA, MSHADOW_SCALAR_, ta> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:75:1: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:577:56: note:   ‘std::__cxx11::basic_string<char>’ is not derived from ‘const mshadow::expr::Exp<TA, mshadow::half::half_t, ta>’
+            writeModelFile(modelFile + "nonnews_dev=" + s_updateIter);
+                                                        ^
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1076:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:108:1: note: candidate: template<class TB, int tb> mshadow::expr::BinaryMapExp<mshadow::op::plus, mshadow::expr::ScalarExp<mshadow::half::half_t>, TB, mshadow::half::half_t, (tb | mshadow::expr::type::kMapper)> mshadow::expr::operator+(const mshadow::expr::ScalarExp<mshadow::half::half_t>&, const mshadow::expr::Exp<TA, mshadow::half::half_t, ta>&)
+ operator+(const ScalarExp<MSHADOW_SCALAR_> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:108:1: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:577:37: note:   cannot convert ‘std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>](((const char*)"nonnews_dev="))’ (type ‘std::__cxx11::basic_string<char>’) to type ‘const mshadow::expr::ScalarExp<mshadow::half::half_t>&’
+            writeModelFile(modelFile + "nonnews_dev=" + s_updateIter);
+                                     ^
+In file included from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:1076:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:139:1: note: candidate: mshadow::expr::BinaryMapExp<mshadow::op::plus, mshadow::expr::ScalarExp<mshadow::half::half_t>, mshadow::expr::ScalarExp<mshadow::half::half_t>, mshadow::half::half_t, 1> mshadow::expr::operator+(const mshadow::expr::ScalarExp<mshadow::half::half_t>&, const mshadow::expr::ScalarExp<mshadow::half::half_t>&)
+ operator+(const ScalarExp<MSHADOW_SCALAR_> &lhs,
+ ^
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./expr_scalar-inl.h:139:1: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘const mshadow::expr::ScalarExp<mshadow::half::half_t>&’
+In file included from /usr/include/c++/5/deque:64:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/MyLib.h:18,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:13,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/usr/include/c++/5/bits/stl_deque.h:372:5: note: candidate: template<class _Tp, class _Ref, class _Ptr> std::_Deque_iterator<_Tp, _Ref, _Ptr> std::operator+(std::ptrdiff_t, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)
+     operator+(ptrdiff_t __n, const _Deque_iterator<_Tp, _Ref, _Ptr>& __x)
+     ^
+/usr/include/c++/5/bits/stl_deque.h:372:5: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:577:37: note:   cannot convert ‘std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*) [with _CharT = char; _Traits = std::char_traits<char>; _Alloc = std::allocator<char>](((const char*)"nonnews_dev="))’ (type ‘std::__cxx11::basic_string<char>’) to type ‘std::ptrdiff_t {aka long int}’
+            writeModelFile(modelFile + "nonnews_dev=" + s_updateIter);
+                                     ^
+In file included from /usr/include/c++/5/vector:65:0,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/././logging.h:16,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/./base.h:264,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/../mshadow/tensor.h:16,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/usr/include/c++/5/bits/stl_bvector.h:387:3: note: candidate: std::_Bit_const_iterator std::operator+(std::ptrdiff_t, const std::_Bit_const_iterator&)
+   operator+(ptrdiff_t __n, const _Bit_const_iterator& __x)
+   ^
+/usr/include/c++/5/bits/stl_bvector.h:387:3: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘std::ptrdiff_t {aka long int}’
+/usr/include/c++/5/bits/stl_bvector.h:297:3: note: candidate: std::_Bit_iterator std::operator+(std::ptrdiff_t, const std::_Bit_iterator&)
+   operator+(ptrdiff_t __n, const _Bit_iterator& __x)
+   ^
+/usr/include/c++/5/bits/stl_bvector.h:297:3: note:   no known conversion for argument 1 from ‘std::__cxx11::basic_string<char>’ to ‘std::ptrdiff_t {aka long int}’
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:11,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/usr/include/c++/5/bits/basic_string.h:4836:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, _CharT)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs, _CharT __rhs)
+     ^
+/usr/include/c++/5/bits/basic_string.h:4836:5: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:577:56: note:   deduced conflicting types for parameter ‘_CharT’ (‘char’ and ‘std::__cxx11::basic_stringstream<char>’)
+            writeModelFile(modelFile + "nonnews_dev=" + s_updateIter);
+                                                        ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:11,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/usr/include/c++/5/bits/basic_string.h:4820:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.h:4820:5: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:577:56: note:   mismatched types ‘const _CharT*’ and ‘std::__cxx11::basic_stringstream<char>’
+            writeModelFile(modelFile + "nonnews_dev=" + s_updateIter);
+                                                        ^
+In file included from /usr/include/c++/5/string:53:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:11,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/usr/include/c++/5/bits/basic_string.tcc:1167:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(_CharT, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(_CharT __lhs, const basic_string<_CharT, _Traits, _Alloc>& __rhs)
+     ^
+/usr/include/c++/5/bits/basic_string.tcc:1167:5: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:577:56: note:   ‘std::stringstream {aka std::__cxx11::basic_stringstream<char>}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+            writeModelFile(modelFile + "nonnews_dev=" + s_updateIter);
+                                                        ^
+In file included from /usr/include/c++/5/string:53:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:11,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/usr/include/c++/5/bits/basic_string.tcc:1151:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const _CharT* __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.tcc:1151:5: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:577:56: note:   mismatched types ‘const _CharT*’ and ‘std::__cxx11::basic_string<char>’
+            writeModelFile(modelFile + "nonnews_dev=" + s_updateIter);
+                                                        ^
+In file included from /usr/include/c++/5/string:52:0,
+                 from /usr/include/c++/5/bits/locale_classes.h:40,
+                 from /usr/include/c++/5/bits/ios_base.h:41,
+                 from /usr/include/c++/5/ios:42,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:11,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/usr/include/c++/5/bits/basic_string.h:4783:5: note: candidate: template<class _CharT, class _Traits, class _Alloc> std::__cxx11::basic_string<_CharT, _Traits, _Alloc> std::operator+(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator+(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+     ^
+/usr/include/c++/5/bits/basic_string.h:4783:5: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:577:56: note:   ‘std::stringstream {aka std::__cxx11::basic_stringstream<char>}’ is not derived from ‘const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>’
+            writeModelFile(modelFile + "nonnews_dev=" + s_updateIter);
+                                                        ^
+In file included from /usr/include/c++/5/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5/bits/char_traits.h:39,
+                 from /usr/include/c++/5/ios:40,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:11,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/usr/include/c++/5/bits/stl_iterator.h:334:5: note: candidate: template<class _Iterator> std::reverse_iterator<_Iterator> std::operator+(typename std::reverse_iterator<_Iterator>::difference_type, const std::reverse_iterator<_Iterator>&)
+     operator+(typename reverse_iterator<_Iterator>::difference_type __n,
+     ^
+/usr/include/c++/5/bits/stl_iterator.h:334:5: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:577:56: note:   ‘std::stringstream {aka std::__cxx11::basic_stringstream<char>}’ is not derived from ‘const std::reverse_iterator<_Iterator>’
+            writeModelFile(modelFile + "nonnews_dev=" + s_updateIter);
+                                                        ^
+In file included from /usr/include/c++/5/bits/stl_algobase.h:67:0,
+                 from /usr/include/c++/5/bits/char_traits.h:39,
+                 from /usr/include/c++/5/ios:40,
+                 from /usr/include/c++/5/ostream:38,
+                 from /usr/include/c++/5/iostream:39,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/CheckGrad.h:11,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LibN3L-master/N3L.h:4,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.h:12,
+                 from /data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:9:
+/usr/include/c++/5/bits/stl_iterator.h:930:5: note: candidate: template<class _Iterator, class _Container> __gnu_cxx::__normal_iterator<_Iterator, _Container> __gnu_cxx::operator+(typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)
+     operator+(typename __normal_iterator<_Iterator, _Container>::difference_type
+     ^
+/usr/include/c++/5/bits/stl_iterator.h:930:5: note:   template argument deduction/substitution failed:
+/data/yzhu/Seg_2_dev/NNSegmentation-partial-add-corpus-weighting-20180515-add-time-debug/LSTMCRFMLLabeler.cpp:577:56: note:   ‘std::stringstream {aka std::__cxx11::basic_stringstream<char>}’ is not derived from ‘const __gnu_cxx::__normal_iterator<_Iterator, _Container>’
+            writeModelFile(modelFile + "nonnews_dev=" + s_updateIter);
+                                                        ^
+CMakeFiles/LSTMCRFMLLabeler.dir/build.make:62: recipe for target 'CMakeFiles/LSTMCRFMLLabeler.dir/LSTMCRFMLLabeler.cpp.o' failed
+make[3]: *** [CMakeFiles/LSTMCRFMLLabeler.dir/LSTMCRFMLLabeler.cpp.o] Error 1
+CMakeFiles/Makefile2:67: recipe for target 'CMakeFiles/LSTMCRFMLLabeler.dir/all' failed
+make[2]: *** [CMakeFiles/LSTMCRFMLLabeler.dir/all] Error 2
+CMakeFiles/Makefile2:79: recipe for target 'CMakeFiles/LSTMCRFMLLabeler.dir/rule' failed
+make[1]: *** [CMakeFiles/LSTMCRFMLLabeler.dir/rule] Error 2
+Makefile:118: recipe for target 'LSTMCRFMLLabeler' failed
+make: *** [LSTMCRFMLLabeler] Error 2
